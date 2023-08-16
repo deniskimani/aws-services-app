@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require('dotenv').config()
-const db = require('./queries')
+const db = require('../scripts/queries')
 
 app.use(express.json());
 

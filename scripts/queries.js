@@ -1,8 +1,8 @@
-const pg = require('pg');
-const Pool = require('pg').Pool
+const { Pool } = require('pg');
+
 
 const { PGUSER, PGHOST, PGPASSWORD, PGDATABASE, PGPORT } = process.env;
-const pool = pg.Pool({
+const pool = new Pool({
 
   database: PGDATABASE,
   user: PGUSER,
